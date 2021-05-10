@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">The Merchant of Sanghai</string>
+
+    <string name="category_phrases">Phrases</string>
+    <string name="category_numbers">Numbers</string>
+    <string name="category_family_members">Family Members</string>
+    <string name="category_colors">Colors</string>
+    <string name="title_activity_numbers">NumbersActivity</string>
+
+
+</resources>

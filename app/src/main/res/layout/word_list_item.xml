@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height">
+
+    <ImageView
+
+        android:id="@+id/wordImage"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tool:src="@drawable/ic_launcher_background"
+        />
+
+
+    <View
+        android:id="@+id/backgroundView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toEndOf="@id/wordImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tool:background="@color/category_family"/>
+
+    <TextView
+        android:id="@+id/miwokText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        tool:text="Lutti"
+        app:layout_constraintStart_toEndOf="@id/wordImage"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/englishText"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+    />
+
+    <TextView
+        android:id="@+id/englishText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tool:text="One"
+        app:layout_constraintStart_toStartOf="@id/miwokText"
+        app:layout_constraintTop_toBottomOf="@id/miwokText"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        />
+
+    <LinearLayout
+        android:id="@+id/playButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/audioId"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="invisible"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_play_button_svgrepo_com"/>
+    </LinearLayout>
+
+<!--    <ImageView-->
+<!--        -->
+<!--        android:layout_width="30dp"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:layout_marginEnd="@dimen/activity_horizontal_margin"-->
+<!--        android:src="@drawable/ic_play_button_svgrepo_com"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        android:clickable="true"-->
+<!--        />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
