@@ -11,7 +11,6 @@ public class MainActivity extends AppCompatActivity {
 
     TextView numbers, familyMembers, colors, phrases;
 
-    //added a comment
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
